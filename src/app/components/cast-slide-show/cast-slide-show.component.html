@@ -1,0 +1,7 @@
+<div class="swiper">
+    <div class="swiper-wrapper">
+        <div (click)="onClickActor(casting)" class="swiper-slide text-white text-center" *ngFor="let casting of cast">
+            <img [src]="casting.profile_path | poster" [alt]="casting.name" class="img-thumbnail"> {{casting.name}}
+        </div>
+    </div>
+</div>
